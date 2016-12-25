@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DFF</title>
+    <title>Different Familiar Flavors</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'true' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
 
   <body>
+
+  <!--nav bar-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  <ul>
+  	<li><a href="/index">Home</a></li>
+  	<li class="dropdown">
+    	<a href="" class="dropbtn">Tools</a>
+    	<div class="dropdown-content">
+      	<a href="#conversiontable">Conversion Table</a>
+      	<a href="#recipebook">Recipe Book</a>
+    	</div>
+    </li>
+  	<li class="dropdown">
+    	<a href="" class="dropbtn">About</a>
+    	<div class="dropdown-content">
+      	<a href="StaticPages#aboutproject">The Project</a>
+      	<a href="/aboutme">About me</a>
+    	</div>
+    </li>
+    <li><a href="/blogs">Blog</a></li>
+    <li><a href="contact">Contact</a></li>
+	</ul>
+  </div>
+</nav>
+  
+<!--nav bar ends-->
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
     <%= yield %>
   </body>
 </html>
