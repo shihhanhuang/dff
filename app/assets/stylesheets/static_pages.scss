@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -51,6 +52,10 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown, .dropup {
+    position: static;
 }
 
 //text
