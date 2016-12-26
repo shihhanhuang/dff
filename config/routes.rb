@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/conversions'
+
+  get 'static_pages/recipebox'
+
   get 'static_pages/aboutproject'
 
   get 'static_pages/aboutme'

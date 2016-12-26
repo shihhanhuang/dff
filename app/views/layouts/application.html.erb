@@ -27,62 +27,43 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">DFF</a>
+      <a class="navbar-brand" href="#"><p>DFF</p></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/">Home<span class="sr-only">(only)</span></a></li>
+        <li class="active"><%= link_to "Home", root_path %><span class="sr-only">(only)</span></a></li>
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#conversiontable">Conversion Table</a></li>
-            <li><a href="#recipebook">Recipe Book</a></li>
+            <li><%= link_to "Conversion Table", static_pages_conversions_path %></li>
+            <li><%= link_to "Recipe Box", static_pages_recipebox_path %></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="StaticPages#aboutproject">The Project</a></li>
-            <li><a href="/aboutme">About me</a></li>
+            <li><%= link_to "The Project", static_pages_aboutproject_path %></li>
+            <li><%= link_to "About me", static_pages_aboutme_path %></li>
           </ul>
         </li>
-        <li><a href="/blogs">Blog</a></li>
-        <li><a href="static_pages/contact">Contact</a></li>
+        <li><%= link_to "Blog", blogs_path %></li>
+        <li><%= link_to "Contact", static_pages_contact_path %></li>
       </ul>  
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<!--
-  <ul>
-  	<li><a href="/index">Home</a></li>
-  	<li class="dropdown">
-    	<a href="" class="dropbtn">Tools</a>
-    	<div class="dropdown-content">
-      	<a href="#conversiontable">Conversion Table</a>
-      	<a href="#recipebook">Recipe Book</a>
-    	</div>
-    </li>
-  	<li class="dropdown">
-    	<a href="" class="dropbtn">About</a>
-    	<div class="dropdown-content">
-      	<a href="StaticPages#aboutproject">The Project</a>
-      	<a href="/aboutme">About me</a>
-    	</div>
-    </li>
-    <li><a href="/blogs">Blog</a></li>
-    <li><a href="contact">Contact</a></li>
-	</ul>
--->
   
 <!--nav bar ends-->
 
 
-
+<% if notice %>
   <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert %>
   <p class="alert"><%= alert %></p>
+<% end %>
 
     <%= yield %>
   </body>
