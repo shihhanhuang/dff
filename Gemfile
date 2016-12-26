@@ -35,6 +35,9 @@ gem 'bootstrap-sass', '~> 3.3'
 # app/stylesheets/application.scss
 gem 'ckeditor'
 gem 'devise'
+# app for user authentication
+gem 'carrierwave' #app for posting photos
+gem 'mini_magick', '3.5' #app for processing images
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
