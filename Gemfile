@@ -34,8 +34,11 @@ gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3'
 # app/stylesheets/application.scss
 gem 'ckeditor'
+# gem for user authentication
 gem 'devise'
-# app for user authentication
+# gem for user authorization
+gem 'cancancan', '~> 1.10' 
+# gem for user 
 gem 'carrierwave' #app for posting photos
 gem 'mini_magick', '3.5' #app for processing images
 
