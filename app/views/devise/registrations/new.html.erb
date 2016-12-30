@@ -1,10 +1,15 @@
 <h2>Sign up</h2>
 
+<p> Thank you for your interest in signing up to Different Familiar Flavors! The webmistress is doing her best to prepare the site for open use, but in the meanwhile only site testers will be authorized. However, the really good stuff are openly available without signing up. Thank you for your understanding, and please revisit soon!</p>
+<p>If you are a (voluntary/involuntary) site tester who had been dragged in to help out, please sign up below. Thank you!!! </p>
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :first_name, required: true, autofocus: true %>
+    <%= f.input :last_name, required: true %>
+    <%= f.input :email, required: true %>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
   </div>
