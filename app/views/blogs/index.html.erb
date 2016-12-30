@@ -16,7 +16,7 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= raw(blog.body) %></td>
-        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'More', blog %></td>
 
         <% if current_user && current_user.admin? %>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
@@ -28,7 +28,8 @@
 </table>
 
 <br>
-
+<% if current_user && current_user.admin? %>
 <%= link_to 'New Post', new_blog_path %>
+<% end %>
 
   <!-- note, adding 'raw' is only good if admin inputted info, not for user input. Check out sanitize gem for better security.-->

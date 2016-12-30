@@ -1,6 +1,8 @@
 <h1>Editing Blog</h1>
 
-<%= render 'form', blog: @blog %>
+<% if current_user && current_user.admin? %>
+	<%= render 'form', blog: @blog %>
+<% end %>
 
 <%= link_to 'Show', @blog %> |
 <%= link_to 'Back', blogs_path %>

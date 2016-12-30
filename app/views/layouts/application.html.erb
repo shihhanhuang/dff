@@ -33,6 +33,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <li> <!--log in/log out-->
+        <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <% else %>
+          <%= link_to('Login', new_user_session_path) %>
+        <% end %>
+        </li><!--end: log in/log out-->
         <li class="active"><%= link_to "Home", root_path %><span class="sr-only">(only)</span></a></li>
         <li><%= link_to "Blog", blogs_path %></li>
         <li class="dropdown">

@@ -12,6 +12,7 @@
   <!-- note, adding 'raw' is only good if admin inputted info, not for user input. Check out sanitize gem for better security.-->
 
 </p>
-
+<% if current_user && current_user.admin? %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
+<% end %>
 <%= link_to 'Back', blogs_path %>
