@@ -7,9 +7,9 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     if params[:approved] == "false"
-      @users = User.where(approved: false)
+      @user = User.where(approved: false)
     else
-      @users = User.all
+      @user = User.all
     end
   end
 
