@@ -13,7 +13,8 @@
 	<ul>
 			<li>Create an accordian to house my musings</li>
 			<li>Choose color scheme</li>
-			<li>Create a Favicon</li>
+			<li><s>Create an "under construction" page </s> (02.01.2017)</li>
+			<li>Edit my Favicon</li>
 			<li>Add a 'forget password' link</li>
 			<li>Add mail actions for signups</li>
 			<li>Create a contact page</li>
@@ -26,6 +27,33 @@
 			<li>Style the log in pages</li>
 			<li>Print function for recipes</li>
 	</ul>
+<h4>Work Log</h4>
+
+<button class="accordion">30.12.2016</button>
+<div class="panel">
+  <p><b><23:10: Finally whole site working!> </b>Couldn't sleep. Sat in the dark trying to figure out what the problem was. Hubby sat down next to me and quietly listened to the issue. "It had worked perfectly on my local machine!"" I complained.</p>
+<p>"You must have forgotten a database migration," he said, looking through my heroku log.</p>
+<p>Time to eat humble pie. I thought that I had gotten quite familiar with database migrations, but seems like there is always more to learn! Ran the requisite migration onto heroku, and finally, all is working.</p>
+<p><b><17:00: Uploaded onto Heroku!></b> One day before the new year, and my website is live! Quickly noticed however that there are still access problems. The blog and sign-in session is totally down. </p>
+<p><b><16:00: Successfully implemented admin approval></b>This is a bit of a work around. While in beta-version, I would like to invite(drag in) some friends to help test the site. However, to spare the poor guest visitor from having to sign up for something that is not yet working yet, I have added a large disclaimer. All accounts will need be first approved by me. I am sure this is not best practice, but hopefully this is only a temporary state!</p><p>Resources consulted: https://github.com/plataformatec/devise/wiki/How-To:-Require-admin-to-activate-account-before-sign_in </p>
+<p><b><10:45: Successfully configured admin rights!> </b> This was harder than I had expected. The culprit was a small 'a' - I had mistakenly mispelled 'boolean' as 'booleen.' This had totally messed up my database migrations. Well, first I had to find out why everyone had admin rights even when they were not supposed to. Then, once I found the problem, I had to get up close and personal with database migrations. Well, now I know how they work, so all in all, a foregone hour that was well worth it. </p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+
+
+
+
+
 <h4>30.12.2016</h4>
 <p><b><23:10: Finally whole site working!> </b>Couldn't sleep. Sat in the dark trying to figure out what the problem was. Hubby sat down next to me and quietly listened to the issue. "It had worked perfectly on my local machine!"" I complained.</p>
 <p>"You must have forgotten a database migration," he said, looking through my heroku log.</p>
@@ -42,4 +70,16 @@
 <p>Next goal: set an administrator so that only I can post on blogs. Also, be able to upload photos on CKEditor. </p><p> Resource consulted: https://scotch.io/tutorials/build-a-blog-with-ruby-on-rails-part-2 )  </p>
 <h4>25.12.2016 The blog model and the art of creating entries</h4><p>Merry Christmas! Today I woke up to the satifaction that I had completed my CKEDITOR installation. (Resource: https://scotch.io/tutorials/build-a-blog-with-ruby-on-rails-part-1 ) HoHoHo. But then realized that my toolbar doesn't work anymore. The dropdown parts have totally disappeared. Ack! Spent pre-Christmas dinner trying to figure out. Hubby comes to rescue. Many christmas cookies later finally solved issue. Before we retired to sleep, hubby makes the oberservation - hmm... what will you doing for mobile? Hovering doesn't work very well there.</p><p>Oh man. Seriously?</p>
 <h4>14.12.2016 Birth of The DFF Project</h4><p><b><13:52:> $ rails new DFF -T </b></p>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
 
