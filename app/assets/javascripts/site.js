@@ -1,6 +1,5 @@
 
 // Accordian
-<script>
   var acc = document.getElementsByClassName("accordion");
 	var i;
 
@@ -10,4 +9,3 @@
         this.nextElementSibling.classList.toggle("show");
   }
 	}
-</script>
