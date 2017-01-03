@@ -3,8 +3,7 @@ body {
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px;
-  margin: 0px;
+  margin: 25px 15px 15px 15px;
 }
 
 p, ol, ul, td {
@@ -21,7 +20,7 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #333;
 
   &:visited {
     color: #666;
@@ -90,4 +89,37 @@ label {
 
 .alert {
   padding: 5px;
+}
+
+//navbar
+.navbar-default .navbar-toggle {
+  border-color: #fff; /* Change border color around this buttons */
+  background: #fff; /* Change background for button itself */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #ED8A00; /* Change color for horizontal lines */
+}
+
+.navbar-brand {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  margin-left: -15px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #ED8A00;
+    background-color: #fff;
+}
+
+ul.nav a:hover, a:active, a:focus { color: #ED8A00 !important; background-color: #fff;}
+
+.navbar-default .navbar-brand .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #fff;
+}
+
+footer {
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
 }

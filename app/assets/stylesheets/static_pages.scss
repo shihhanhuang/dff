@@ -2,6 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//Hero image//
+
+main{
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero{
+  width: 100%;
+  text-align: center;
+  position: relative; 
+  color: #392f28;
+  margin-top: 10px;
+}
+
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+}
+.hero p{
+  font-size: 1.5em;
+  margin: auto;
+  z-index: 1;
+   color: white;
+}
+
+.hero img{
+  width: 100%;
+}
+
+
+
 //Accordian Styles//
 /* Style the buttons that are used to open and close the accordion panel */
 
@@ -56,4 +95,5 @@ h1 {
 
 p, li {
 	font-family: 'Raleway', sans-serif;
+  font-size: 12px;
 }
