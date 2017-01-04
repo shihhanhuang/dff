@@ -1,9 +1,15 @@
+.top {
+  text-align: center;
+  color: #ED8A00;
+  margin-bottom: -10px;
+}
+
 body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  margin: 25px 15px 15px 15px;
+  margin: 15px;
 }
 
 p, ol, ul, td {
@@ -92,6 +98,24 @@ label {
 }
 
 //navbar
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li {
+      float: none;
+      display: inline-block;
+    }
+}
+
+.navbar {
+  min-height: 50px;
+  margin-bottom: 20px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
 .navbar-default .navbar-toggle {
   border-color: #fff; /* Change border color around this buttons */
   background: #fff; /* Change background for button itself */
@@ -99,12 +123,6 @@ label {
 
 .navbar-default .navbar-toggle .icon-bar {
   background: #ED8A00; /* Change color for horizontal lines */
-}
-
-.navbar-brand {
-  font-family: 'Caveat', cursive;
-  font-size: 40px;
-  margin-left: -15px;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -118,6 +136,7 @@ ul.nav a:hover, a:active, a:focus { color: #ED8A00 !important; background-color:
     color: #555;
     background-color: #fff;
 }
+
 
 footer {
   padding-top: 15px;
