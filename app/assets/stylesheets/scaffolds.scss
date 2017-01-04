@@ -1,7 +1,7 @@
 .top {
   text-align: center;
   color: #ED8A00;
-  margin-bottom: -10px;
+  margin-bottom: -17px;
 }
 
 body {
@@ -26,15 +26,15 @@ pre {
 }
 
 a {
-  color: #333;
+  color: #ED8A00;
 
   &:visited {
-    color: #666;
+    color: #ED8A00;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #ED8A00;
+    background-color: transparent;
   }
 }
 
@@ -109,11 +109,18 @@ label {
 }
 
 .navbar {
-  min-height: 50px;
-  margin-bottom: 20px;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   border-top: 1px solid transparent;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
 }
 
 .navbar-default .navbar-toggle {
