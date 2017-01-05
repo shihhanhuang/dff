@@ -31,6 +31,13 @@
 <h4>Work Log</h4>
 
 <!--Accordian start-->
+<button class="accordion">04.01.2017 Navigation bar styled and Contact Form created </button>
+	<div class="panel">
+	<p> A bow to all designers. Designing and creating beautiful layouts is harder than I imagined. Played all day yesterday and today trying to do the correct formating, but it definitely takes quite a bit of time!</p>
+	<p> Also, decided to create the contact page. Currently trying to work through the intricacies of recaptcha.</p>
+	<p> Resource consulted: https://www.sitepoint.com/quick-tip-add-recaptcha-to-your-rails-application/ </p>
+</div>
+
 <button class="accordion">02.01.2016 To-do List created as well as a favicon and accordian </button>
 	<div class="panel">
 		<p>It took a bit longer to put the Favicon icon up than I had hoped. The trick is to put the .png file in the right position - and for Ruby on Rails apps, it's in the public folder. </p>
@@ -71,7 +78,17 @@
 	<p><b><13:52:> $ rails new DFF -T </b></p>
 </div>
 
+<script>
+  var acc = document.getElementsByClassName("accordion");
+	var i;
 
+	for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
 
 <!--Accordian Ends-->
 
